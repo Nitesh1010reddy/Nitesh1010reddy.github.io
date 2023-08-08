@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href='style.css'>
+    <script src="https://kit.fontawesome.com/85d4df0de5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+        <!-----<img src="images/logo.png" class="logo">--->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Nitesh</span><br>From Mahindra University</h1>
+        </div>
+    </div>
+</div>
+
+<!--about me-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"><u>About me</u></h1>
+                <br>
+                <p>
+                   <b>As an electronics and computer science engineer, I am passionate about exploring the ever-evolving world of technology and its limitless possibilities. From designing cutting-edge electronics to crafting innovative software solutions, I thrive on pushing the boundaries of what's possible. Let's embark on a journey of innovation and discovery together, shaping the future of technology!</b> 
+                </p>
+
+                <div class="tab-titles">
+                    <!-- Corrected the onclick attributes with proper closing quotes -->
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><b>HTML and CSS :</b></span><br>Proficient in creating dynamic and visually appealing web pages with responsive layouts using HTML and CSS.</li>
+                        <li><span><b>Embedded systems :</b></span><br>Experienced in working with sensors, actuators, and communication protocols to create sophisticated embedded solutions for diverse industries.</li>
+                        <li><span><b>Machine Learning :</b></span><br>Knowledgeable in machine learning algorithms and frameworks, using Python libraries like TensorFlow and scikit-learn.</li>
+                        <li><span><b>Arduino :</b></span><br>Hands-on experience in programming Arduino microcontrollers for various projects, including IoT applications.</li>
+                        <li><span><b>Computer Programming :</b></span><br>Proficient in Python programming for web development, data analysis, and scientific computing, with experience in writing efficient C code for embedded systems and low-level hardware interactions.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span><b>January 2023 - February 23</b></span><br>Nuclear Fuel Complex, DAE</li>
+                        <p><b><u>Data acquisition from an electron beam melting furnace</u></b> </p>
+                        <br>
+                            <p>*Collected temperature readings from the furnace.</p>  
+                            <p>*Communicated data via Mod-bus protocol using RS-232 and RS-485 serial communication .</p> 
+                            <p>*Utilized Python modules like PyModbus, matplotlib to plot and visualize real-time data.</p> 
+                        <br>
+                        <li><span><b>June 2023 - August 23</b></span><br>Directorate of Special Projects, DRDO</li>
+                        <p><b><u>Implementation of MIL-STD-1553 using Arduino Uno</u></b></p>
+                        <br>
+                        <p>* Worked on interfacing ATMega328P micro-controller with BU 61580 ACE (Advanced Communication Engine).</p>
+                        <p>* Research on  communication and data transfer via MIL-STD-1553 protocol.</p>
+                        <p>* Gained practical experience in embedded systems and micro-controller programming.</p>
+                        <p>* Strengthened knowledge of aerospace and defense communication standards.</p>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><b>Secondary Education</b></span><br>Johnson Grammar School, ICSE (87.83%)</li> 
+                        <li><span><b>Intermediate Education</b></span><br>Fiitjee Junior College ,TSBIE (93.6%)</li> 
+                        <li><span><b>B Tech in Electronics and computer engineer (ECM)</b></span><br>Mahindra University (7.65)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--services-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"><u>My Projects</u> </h1>
+        <br>
+        <br>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2><b>Crowd source air quality machine</b></h2>
+                <p>* Developed a real-time monitoring system using Arduino Uno to collect gas sensor and accelerometer readings.</p>
+                <br>
+                <p>* Enabled Bluetooth communication to transmit the data to the user interface for seamless interaction.</p>
+                <br>
+                <p>* Utilized machine learning algorithms to create informative heat-maps, effectively visualizing the data and identifying patterns.</p>
+                <br>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-wheat-awn"></i>
+                <h2><b>Smart farming</b></h2>
+                <p>*Built an efficient farming bot for automated irrigation using soil moisture content measurements.</p>
+                <br>
+                <p>*Utilized cutting-edge technology to optimize farming techniques and resource management.</p>
+                <br>
+                <p>*Improved agricultural productivity and water efficiency.</p>
+                
+            </div>
+            <div>
+                <i class="fa-brands fa-bots"></i>
+                <h2><b>AI photography bot</b></h2>
+                <p>* Part of building an adaptive photography bot capable of automatically capturing images based on surrounding conditions.</p>
+                <br>
+                <p>* Implemented Arduino-based code to detect and adjust brightness levels for optimal picture quality.</p>
+                <br>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-----portfolio---->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="'sub-title"><u>Extra-curricular activities</u></h1>
+        <br>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/sports.png" alt="sports">
+                <div class="layer">
+                    <h3><b>Sports , January 2021 - August 2024</b></h3>
+                    <br>
+                    <p> * Active Member of Mahindra University Cricket Team ,representing the university in various state-level tournaments.</p>
+                    <br>
+                    <p> * Secured the runner-up position in the annual sports fest AIRO, showcasing sportsmanship and dedication in competitive events at the university level.</p>
+                    <br>
+                   <!----<a href="#"><i class="fa-solid fa-link"></i></a>-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/aero.png" alt="aeroclub">
+                <div class="layer">
+                    <h3><b>Aero club , January 2021 - August 2024</b></h3>
+                    <br>
+                    <p>* Involved in designing, building, and piloting radio-controlled planes and autonomous drones, showcasing a strong passion for aviation technology and collaborative teamwork.</p>
+                    <br>
+                    <p>* Engaged in regular workshops and skill-sharing sessions to continuously improve knowledge of aviation technology and related disciplines.</p>
+                    <br>
+                    <!--<a href="#"><i class="fa-solid fa-link"></i></a>-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/logistics.png" alt="hult-eic">
+                <div class="layer">
+                    <h3><b>Hult prize and E-cell</b></h3>
+                    <br>
+                    <p>* Actively contributed to the organization and execution of diverse events, exposing students to the multifaceted entrepreneurial lifestyle.</p>
+                    <br>
+                    <p>* Played a key role in organizing and coordinating various campus-wide events, demonstrating strong organizational and teamwork skills in contributing to the success of the Hult Prize Club initiatives.</p>
+                    <br>
+                    <!--<a href="#"><i class="fa-solid fa-link"></i></a>-->
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+
+</div>
+
+<!----contact---->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"><u>Contact Me</u></h1>
+                <br>
+                <p><i class="fa-solid fa-paper-plane"></i>  niteshreddy1010@gmail.com</p>
+                <br>
+                <p><i class="fa-solid fa-phone-volume"></i>  8977067890</p>
+                <br>
+                <div class="social-icons">
+                    <a href="https://instagram.com/niteshreddy1010?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/nitesh-reddy-6ba6a6213"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/NiteshReddy_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"> </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Nitesh Reddy.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+
+var sidemeu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemeu.style.right="0";
+}
+function closemenu(){
+    sidemeu.style.right="-200px";
+}
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxgc2gWEWXn5XCGUf7bgfLau5EeNwpwOazu3tu_hB3OGtKSn74-9speAUM8DEABg_QT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully" 
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
